@@ -1,0 +1,49 @@
+<!doctype html>
+<html>
+
+<head>
+    <title>
+        Password Generator
+    </title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.2.0/css/bootstrap.min.css"
+        integrity="sha512-XWTTruHZEYJsxV3W/lSXG1n3Q39YIWOstqvmFsdNEEQfHoZ6vm6E9GK2OrF6DSJSpIbRbi+Nn0WDPID9O7xB2Q=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <div class="container py-5 h-100">
+        <div class="row d-flex justify-content-center align-items-center h-100">
+            <div class="card col-md-6 mt-auto m-auto">
+                <div class="card-header text-center">
+                    <div class="card-title">Password Generator</div>
+                </div>
+                <div class="card-body">
+                    <form>
+                        <!-- Email input -->
+                        <div class="form-outline mb-4">
+                            <label class="form-label" for="length">Password Length</label>
+                            <input type="number" name="passwordLength" id="passwordLength" class="form-control" min="8" max="24" placeholder="8-24"/>
+                        </div>
+                    
+                        <!-- Password input -->
+                        <label class="form-label" for="form2Example2">Your Password</label>
+                        <div class="form-outline mb-4">
+                            <input type="text" name="password" id="password" class="form-control" placeholder="Your password will generated here"/>
+                        </div>
+                    
+                        <!-- Submit button -->
+                        <button type="button" id="generate" class="btn btn-primary btn-block mb-4 col-md-12" onclick="getPassword()">Generate Password</button>
+                        <a id="saveButton" class="btn btn-primary btn-block mb-4 col-md-12">Save Password</a>
+                    
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.2.0/js/bootstrap.min.js"
+        integrity="sha512-8Y8eGK92dzouwpROIppwr+0kPauu0qqtnzZZNEF8Pat5tuRNJxJXCkbQfJ0HlUG3y1HB3z18CSKmUo7i2zcPpg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <script src="script.js"></script>
+</body>
+
+</html>
